@@ -1,0 +1,17 @@
+[package]
+name = "shoal_quic"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+# the default features to enabled
+default = ["server"]
+
+server = ["glommio", "quinn-proto", "bytes", "rustls", "rcgen"]
+
+[dependencies]
+glommio = { version = "0.8", optional = true }
+quinn-proto = { version = "0.10", optional = true }
+bytes = { version = "1.4", optional = true }
+rustls = { version = "0.21", optional = true }
+rcgen = { version = "0.11", optional = true }

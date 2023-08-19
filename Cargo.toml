@@ -1,0 +1,8 @@
+[workspace]
+# use the 2021 resolver
+resolver = "2"
+
+members = [
+  "server",
+  "client"
+]
